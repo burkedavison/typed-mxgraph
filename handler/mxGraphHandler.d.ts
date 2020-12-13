@@ -413,6 +413,13 @@ declare module 'mxgraph' {
     roundLength(length: number): number;
 
     /**
+     * Function: isValidDropTarget
+     * 
+     * Returns true if the given cell is a valid drop target.
+     */
+    isValidDropTarget(target: mxCell, me: mxMouseEvent): boolean;
+
+    /**
      * Function: mouseMove
      *
      * Handles the event by highlighting possible drop targets and updating the
